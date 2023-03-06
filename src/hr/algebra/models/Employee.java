@@ -1,26 +1,19 @@
 package hr.algebra.models;
 
-import hr.algebra.Interfaces.SimpleEmployee;
-
-public class Employee implements SimpleEmployee {
+public class Employee {
 
     private String firstName;
 
     private String lastName;
 
-    double salaryPercent;
+    private double salaryPercent;
 
-    public Employee(String firstName, String lastName, double percent) {
+    public Employee(String firstName, String lastName, double salaryPercent) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.salaryPercent = salaryPercent(percent);
+        this. salaryPercent = salaryPercent;
     }
 
-
-    @Override
-    public double salaryPercent(double percent) {
-        return percent;
-    }
 
     public double getSalaryPercent() {
         return salaryPercent;
